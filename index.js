@@ -1,27 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import GlobalStyle from "./styles/globalStyle";
-import Routes from "./routes";
 
-// ReactDOM.render(
-//   <>
-//     <Routes /> 
-//     <GlobalStyle />
-//   </>,
-//   document.getElementById("root")
-// );
+import  { H1 }  from "./styles";
 
-const rootElement = document.getElementById('root')
+function Title({children}) {
+  return <H1>{children}</H1>;
+}
 
-const root = ReactDOM.createRoot(rootElement)
-
-root.render(
-   <>
-     <Routes /> 
-     <GlobalStyle />
-   </>,
-//   document.getElementById("root")
-)
-
-
-// https://www.youtube.com/watch?v=tx1G-OZoipY
+export default Title;
